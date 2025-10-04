@@ -39,6 +39,37 @@ Welcome to **Awesome LangGraph Agents** - a comprehensive collection of sophisti
 
 ## 🤖 Agents
 
+### Weather & Planning
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🌤️ [Weather Agent](./agents/weather-agent)
+
+Intelligent weather assistant providing forecasts and activity-based recommendations.
+
+**Key Features:**
+
+- 🎯 Activity-based YES/NO recommendations
+- ⏰ Time-aware forecasting (tonight, tomorrow, etc.)
+- 📊 Comprehensive weather data (current + 7-day forecast)
+- 🆓 Completely FREE - no weather API key needed
+- 🤖 Claude Sonnet 4.5 powered analysis
+
+**Tech Stack:** LangGraph • LangChain • Anthropic • Open-Meteo
+
+[View Demo](./agents/weather-agent#demo) | [Documentation](./agents/weather-agent/README.md)
+
+</td>
+<td width="50%">
+<img src="./agents/weather-agent/assets/weather-agent-demo.gif" alt="Weather Agent Demo" width="100%"/>
+</td>
+</tr>
+</table>
+
+---
+
 ### Content & Social Media
 
 <table>
@@ -104,7 +135,8 @@ cd awesome-langgraph-agents
 2. **Choose an agent and navigate to its directory**
 
 ```bash
-cd agents/blog-to-tweet-agent
+# Weather Agent
+cd agents/weather-agent
 ```
 
 3. **Install dependencies**
@@ -146,6 +178,7 @@ Open [LangGraph Studio](https://smith.langchain.com/studio/?baseUrl=http://127.0
 
 ### Common Tools & Integrations
 
+- **Open-Meteo** - Free weather data API
 - **Firecrawl** - Web scraping and content extraction
 - **Python 3.12+** - Modern Python features
 - **uv** - Fast Python package management
@@ -206,7 +239,11 @@ We welcome contributions! Here's how you can help:
 ```
 awesome-langgraph-agents/
 ├── agents/                    # Individual agent directories
-│   └── blog-to-tweet-agent/  # Example agent
+│   ├── weather-agent/        # Weather & planning agent
+│   │   ├── README.md
+│   │   ├── src/
+│   │   └── ...
+│   └── blog-to-tweet-agent/  # Content generation agent
 │       ├── README.md
 │       ├── src/
 │       └── ...
