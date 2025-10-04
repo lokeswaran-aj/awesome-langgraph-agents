@@ -9,7 +9,7 @@
 [![LangGraph](https://img.shields.io/badge/LangGraph-Latest-green.svg)](https://github.com/langchain-ai/langgraph)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-[🚀 Getting Started](#-getting-started) • [🤖 Agents](#-agents) • [💡 Contributing](#-contributing) • [📖 Resources](#-resources)
+[🚀 Getting Started](#-getting-started) • [🤖 Agents](#-agents) • [💡 Contributing](#-contributing)
 
 </div>
 
@@ -70,6 +70,37 @@ Intelligent weather assistant providing forecasts and activity-based recommendat
 
 ---
 
+### Search & Research
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🔍 [Web Search Agent](./agents/web-search-agent)
+
+Intelligent search assistant that provides comprehensive, well-researched answers by leveraging multiple web search APIs.
+
+**Key Features:**
+
+- 🔍 Dual search engine integration (Tavily + Google Serper)
+- 🎯 Cross-references and validates information across sources
+- 📊 Expert-quality responses with source attribution
+- ⚡ Real-time information from the web
+- 🤖 Claude Sonnet 4.5 powered synthesis
+
+**Tech Stack:** LangGraph • LangChain • Anthropic • Tavily • Serper
+
+[View Demo](./agents/web-search-agent#demo) | [Documentation](./agents/web-search-agent/README.md)
+
+</td>
+<td width="50%">
+<img src="./agents/web-search-agent/assets/web-search-agent-demo.gif" alt="Web Search Agent Demo" width="100%"/>
+</td>
+</tr>
+</table>
+
+---
+
 ### Content & Social Media
 
 <table>
@@ -107,7 +138,6 @@ We're actively developing more agents! Star ⭐ this repo to stay updated.
 **Planned Agents:**
 
 - 📧 Email Response Agent - Intelligent email drafting and responses
-- 🔍 Research Assistant Agent - Multi-source research and synthesis
 - 📊 Data Analysis Agent - Automated insights from datasets
 - 💬 Customer Support Agent - Multi-turn support conversations
 
@@ -179,6 +209,8 @@ Open [LangGraph Studio](https://smith.langchain.com/studio/?baseUrl=http://127.0
 ### Common Tools & Integrations
 
 - **Open-Meteo** - Free weather data API
+- **Tavily** - AI-optimized search API
+- **Google Serper** - Google search results API
 - **Firecrawl** - Web scraping and content extraction
 - **Python 3.12+** - Modern Python features
 - **uv** - Fast Python package management
@@ -240,6 +272,10 @@ We welcome contributions! Here's how you can help:
 awesome-langgraph-agents/
 ├── agents/                    # Individual agent directories
 │   ├── weather-agent/        # Weather & planning agent
+│   │   ├── README.md
+│   │   ├── src/
+│   │   └── ...
+│   ├── web-search-agent/     # Web search & research agent
 │   │   ├── README.md
 │   │   ├── src/
 │   │   └── ...
