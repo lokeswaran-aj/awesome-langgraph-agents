@@ -131,6 +131,36 @@ Automatically converts blog posts into engaging X/Twitter threads.
 
 ---
 
+<table>
+<tr>
+<td width="50%">
+
+#### 🎥 [YouTube Video to Blog Agent](./agents/youtube-video-to-blog)
+
+Transforms YouTube videos into SEO-friendly, well-structured Markdown blog posts.
+
+**Key Features:**
+
+- 🎥 Automatic YouTube transcript extraction
+- ✍️ AI-powered content generation
+- 📝 SEO-optimized Markdown format
+- 🎯 Complete structure (TL;DR, ToC, FAQs)
+- 🧹 Filters out YouTube-specific filler
+- 🤖 Claude Sonnet 4.5 powered
+
+**Tech Stack:** LangGraph • LangChain • Anthropic • Klavis MCP
+
+[View Demo](./agents/youtube-video-to-blog#demo) | [Documentation](./agents/youtube-video-to-blog/README.md)
+
+</td>
+<td width="50%">
+<img src="./agents/youtube-video-to-blog/assets/youtube-video-to-blog-demo.gif" alt="YouTube Video to Blog Demo" width="100%"/>
+</td>
+</tr>
+</table>
+
+---
+
 ### Coming Soon 🚧
 
 We're actively developing more agents! Star ⭐ this repo to stay updated.
@@ -212,6 +242,7 @@ Open [LangGraph Studio](https://smith.langchain.com/studio/?baseUrl=http://127.0
 - **Tavily** - AI-optimized search API
 - **Google Serper** - Google search results API
 - **Firecrawl** - Web scraping and content extraction
+- **Klavis** - MCP Server platform for tool integration
 - **Python 3.12+** - Modern Python features
 - **uv** - Fast Python package management
 - **LangSmith** - Observability and debugging
@@ -270,21 +301,25 @@ We welcome contributions! Here's how you can help:
 
 ```
 awesome-langgraph-agents/
-├── agents/                    # Individual agent directories
-│   ├── weather-agent/        # Weather & planning agent
+├── agents/                       # Individual agent directories
+│   ├── weather-agent/           # Weather & planning agent
 │   │   ├── README.md
 │   │   ├── src/
 │   │   └── ...
-│   ├── web-search-agent/     # Web search & research agent
+│   ├── web-search-agent/        # Web search & research agent
 │   │   ├── README.md
 │   │   ├── src/
 │   │   └── ...
-│   └── blog-to-tweet-agent/  # Content generation agent
+│   ├── blog-to-tweet-agent/     # Blog to tweet generation agent
+│   │   ├── README.md
+│   │   ├── src/
+│   │   └── ...
+│   └── youtube-video-to-blog/   # YouTube to blog conversion agent
 │       ├── README.md
 │       ├── src/
 │       └── ...
-├── LICENSE                    # MIT License
-└── README.md                  # This file
+├── LICENSE                       # MIT License
+└── README.md                     # This file
 ```
 
 ---
@@ -308,6 +343,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspired by [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps)
 - Built with [LangGraph](https://github.com/langchain-ai/langgraph) by LangChain
 - Powered by [Anthropic Claude](https://www.anthropic.com/)
+- Special thanks to [Klavis](https://www.klavis.ai/) for providing free MCP credits for tool integration
 
 ---
 

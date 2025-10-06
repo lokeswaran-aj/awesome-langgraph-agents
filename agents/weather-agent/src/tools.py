@@ -196,15 +196,12 @@ def weather_tool(location: str) -> str:
     try:
         # Step 1: Convert location to coordinates
         lat, lon, full_location = get_coordinates(location)
-        print(f"Coordinates for {location}: lat={lat}, lon={lon}")
-        print(f"Full location: {full_location}")
 
         # Step 2: Fetch weather data using Open-Meteo API
         weather_data = fetch_weather_data(lat, lon)
 
         # Step 3: Format and return the response
         formatted_response = format_weather_response(weather_data, full_location)
-        print(formatted_response)
 
         return formatted_response
 

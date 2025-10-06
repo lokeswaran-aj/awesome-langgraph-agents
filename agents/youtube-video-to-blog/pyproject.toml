@@ -1,0 +1,19 @@
+[project]
+name = "youtube-video-to-blog"
+version = "0.1.0"
+description = "A LangGraph-powered agent that converts YouTube videos into clear, SEO-friendly Markdown posts."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "klavis>=2.5.0",
+    "langchain>=1.0.0a10",
+    "langchain-anthropic>=1.0.0a2",
+    "langchain-core>=1.0.0a6",
+    "langchain-mcp-adapters>=0.1.11",
+    "langgraph>=1.0.0a4",
+]
+
+[dependency-groups]
+dev = [
+    "langgraph-cli[inmem]>=0.4.2",
+]
